@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-container{
+  @apply w-11/12 mx-auto px-2
+}
+
+.title{
+  @apply font-serif text-2xl font-semibold italic
+}
+
+.link-tag{
+  @apply px-4 text-xl font-medium
+}
