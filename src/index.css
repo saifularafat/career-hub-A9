@@ -10,15 +10,15 @@
   @apply font-serif text-2xl font-semibold italic
 }
 .active{
-  @apply text-xl font-medium text-[#7E90FE] hover:text-[#7E90FE] hover:underline underline transition-colors duration-200 tracking-wide 
+  @apply text-xl font-medium text-col hover:text-logo2 hover:underline underline transition-colors duration-200 tracking-wide 
 }
 .default{
-  @apply text-xl font-medium text-[#757575] hover:text-[#7E90FE] hover:underline transition-colors duration-200 tracking-wide
+  @apply text-xl font-medium text-subtitle hover:text-logo2 hover:underline transition-colors duration-200 tracking-wide
 }
 .btn-star{
-  @apply bg-gradient-to-r from-[#7E90FE] to-[#9873FF] py-2 md:py-4 md:px-7 px-3 rounded-md text-white 
+  @apply bg-gradient-to-r from-col to-btnmcolor py-2 md:py-4 md:px-7 px-3 rounded-md text-white 
   md:text-xl md:font-bold font-semibold font-mono transition duration-200
-  hover:bg-gradient-to-r hover:from-[#5334a9] hover:to-[#5d6fe3]
+  hover:bg-gradient-to-r hover:from-btnhover hover:to-logo2
 }
 
 .title-cate-fea{
@@ -26,4 +26,12 @@
 }
 .description{
   @apply font-medium text-slate-500
+}
+
+.time {
+  @apply border-logo2 border rounded py-1 px-3 text-logo font-semibold
+}
+.company-btn {
+  @apply font-bold text-white text-xl bg-gradient-to-r from-col to-logo2 py-3 px-5 rounded-md tracking-wide mt-3
+        hover:bg-gradient-to-r hover:from-btnhover hover:to-logo2 transition duration-200
 }

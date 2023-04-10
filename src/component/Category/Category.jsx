@@ -13,7 +13,7 @@ const Category = ({ jobs }) => {
             <h2 className='text-lg md:text-xl font-bold text-gray-900 pb-2'>
                 {name}
             </h2>
-            <p className='text-base font-medium text-slate-400'>
+            <p className='text-base font-medium text-subtile'>
                 {job}
             </p>
             <div>

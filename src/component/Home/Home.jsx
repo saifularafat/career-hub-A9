@@ -27,7 +27,7 @@ const Home = () => {
     return (
         <div>
             {/* content and animation added start */}
-            <div className='md:flex justify-between items-center pt-8 bg-[#F9F9FF]'>
+            <div className='md:flex justify-between items-center pt-8 bg-slidcolor'>
                 <div>
                     <Lottie animationData={Application} loop={true} />
                 </div>

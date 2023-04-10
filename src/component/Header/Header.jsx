@@ -10,7 +10,7 @@ const Header = () => {
                 {/* logo section */}
                 <Link to='/'>
                     <div className='relative flex items-center'>
-                        <BriefcaseIcon className="h-8 w-8 text-[#9873FF]" />
+                        <BriefcaseIcon className="h-8 w-8 text-logo" />
                         <p className='tracking-wide'>
                             <span className='font-serif text-3xl font-semibold text-rose-700'>D</span>
                             <span className='title  text-sky-500'>e</span>
@@ -67,7 +67,7 @@ const Header = () => {
                         title='Open Menu'
                         onClick={() => setIsMenuOpen(true)}
                     >
-                        <Bars3BottomRightIcon className="h-9 w-9 text-[#9873FF]" />
+                        <Bars3BottomRightIcon className="h-9 w-9 text-logo" />
                     </button>
                     {
                         isMenuOpen && (
@@ -77,7 +77,7 @@ const Header = () => {
                                     <div>
                                         <Link to='/'>
                                             <div className=' inline-flex items-center'>
-                                                <BriefcaseIcon className="h-8 w-8 text-[#9873FF]" />
+                                                <BriefcaseIcon className="h-8 w-8 text-logo" />
                                                 <p className='tracking-wide'>
                                                     <span className='font-serif text-3xl font-semibold text-rose-700'>D</span>
                                                     <span className='title  text-sky-500'>e</span>
@@ -97,7 +97,7 @@ const Header = () => {
                                             title='Close MEnu'
                                             onClick={() => setIsMenuOpen(false)}
                                         >
-                                            <XMarkIcon className="w-9 text-[#5d6fe3]" />
+                                            <XMarkIcon className="w-9 text-logo2" />
                                         </button>
                                     </div>
                                 </div>
