@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
 
                 {/* category section props transfer of Category component */}
-                <div className='grid md:grid-cols-4 grid-cols-2 md:gap-4 gap-5 mx-10 mt-10'>
+                <div className='grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-5 mx-10 mt-10 '>
                     {
                         category.map(jobs => <Category
                             key={jobs.id}
@@ -48,7 +48,6 @@ const Home = () => {
                         ></Category>)
                     }
                 </div>
-
             </div>
             {/* category section start */}
 
