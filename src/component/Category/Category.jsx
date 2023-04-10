@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Category = ({ jobs }) => {
-    console.log(jobs);
     const { img, name, job, id } = jobs
     return (
         <div className='border shadow-md p-5 rounded-md 

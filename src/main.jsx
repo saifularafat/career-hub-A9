@@ -2,17 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 import Main from './component/Layout/Main';
 import Error from './component/Error/Error';
 import Home from './component/Home/Home';
 import Statistics from './component/Statistics/Statistics';
 import AppliedJob from './component/AppliedJob/AppliedJob';
 import Blog from './component/Blog/Blog';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Home />,
+        loader: () => fetch('featured.json')
       },
       {
         path: 'statistics',

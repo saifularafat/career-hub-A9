@@ -20,3 +20,10 @@
   md:text-xl md:font-bold font-semibold font-mono transition duration-200
   hover:bg-gradient-to-r hover:from-[#5334a9] hover:to-[#5d6fe3]
 }
+
+.title-cate-fea{
+  @apply text-5xl font-bold text-slate-800 mt-24 pb-4
+}
+.description{
+  @apply font-medium text-slate-500
+}

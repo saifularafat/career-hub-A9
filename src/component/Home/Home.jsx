@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Lottie from "lottie-react";
 import Application from "../../../public/job.json";
 import Category from '../Category/Category';
+import { useLoaderData } from 'react-router-dom';
+import Company from '../Company/Company';
 const Home = () => {
     const [category, setCategory] = useState([]);
 
@@ -11,7 +13,8 @@ const Home = () => {
             .then(data => setCategory(data))
     }, [])
 
-
+    const featured = useLoaderData();
+    // console.log(featured);
     return (
         <div>
             {/* content and animation added start */}
@@ -35,8 +38,8 @@ const Home = () => {
             {/* category section start */}
             <div>
                 <div className='text-center'>
-                    <h3 className='text-5xl font-bold text-slate-800 mt-24 pb-4'>Job Category List</h3>
-                    <p className='font-medium text-slate-500'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                    <h3 className='title-cate-fea'>Job Category List</h3>
+                    <p className='description'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </div>
 
                 {/* category section props transfer of Category component */}
@@ -51,7 +54,20 @@ const Home = () => {
             </div>
             {/* category section start */}
 
-
+            {/* Featured Jobs section start */}
+            <div className='text-center pt-10 pb-8'>
+                <h2 className='title-cate-fea'>Featured Jobs</h2>
+                <p className='description'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+            </div>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-5 mx-10'>
+                {
+                    featured.map(company => <Company
+                    key={company.id}
+                    company = {company}
+                    ></Company> )
+                }
+            </div>
+            {/* Featured Jobs section start */}
         </div>
     );
 };
