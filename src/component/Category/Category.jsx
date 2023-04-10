@@ -10,7 +10,7 @@ const Category = ({ jobs }) => {
                 alt="category photo"
                 className='w-20 h-20 bg-gray-200 rounded-md p-4 mb-8'
             />
-            <h2 className='text-xl font-bold text-gray-900 pb-2'>
+            <h2 className='text-lg md:text-xl font-bold text-gray-900 pb-2'>
                 {name}
             </h2>
             <p className='text-base font-medium text-slate-400'>

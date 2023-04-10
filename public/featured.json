@@ -1,8 +1,8 @@
 [
     {
-      "id": "asdfghdf12cdd22",
-      "name": "Technical Database Engineer",
-      "image": "https://imgbox.io/ib/GDYFqkfwXP",
+      "id": "12cdd22",
+      "company_name": "Technical Database Engineer",
+      "logo": "https://i.ibb.co/281gj1F/google.png",
       "company": "Google LLC",
       "location": "Dhaka, Bangladesh",
       "Salary": "100K - 150K",
@@ -16,9 +16,9 @@
       "experiences": "2-3 Years in this field."
     },
     {
-      "id": "aspxrecgh12cre29",
-      "name": "Senior Product Designer",
-      "image": "https://imgbox.io/ib/MtEENeUOrq",
+      "id": "12cre29",
+      "company_name": "Senior Product Designer",
+      "logo": "https://i.ibb.co/nnNx8nL/netflix.png",
       "company": "Netflix",
       "location": "Chittagong, Bangladesh",
       "Salary": "80K - 120K",
@@ -32,9 +32,9 @@
       "experiences": "1-2 Years in this field."
     },
     {
-      "id": "asokinfv12caa89",
-      "name": "Software Engineer",
-      "image": "https://imgbox.io/ib/yBSwKh5hua",
+      "id": "12caa89",
+      "company_name": "Software Engineer",
+      "logo": "https://i.ibb.co/ZG2mYjq/tasla.png",
       "company": "Tesla",
       "location": "Dhaka, Bangladesh",
       "Salary": "110K - 160K",
@@ -48,9 +48,9 @@
       "experiences": "2-3 Years in this field."
     },
     {
-      "id": "asdkvih12ctg26",
-      "name": "Yahoo Mail",
-      "image": "https://imgbox.io/ib/k3wft5RxHi",
+      "id": "12ctg26",
+      "company_name": "Yahoo Mail",
+      "logo": "https://i.ibb.co/VMvW5RK/yahoo.png",
       "company": "Yahoo",
       "location": "Dhaka, Bangladesh",
       "Salary": "90K - 120K",
@@ -64,9 +64,9 @@
       "experiences": "1-2 Years in this field."
     },
     {
-      "id": "aswfdk12cpl46",
-      "name": "Facebook Meta",
-      "image": "https://imgbox.io/ib/dp0TSTq2o8",
+      "id": "12cpl46",
+      "company_name": "Facebook Meta",
+      "logo": "https://i.ibb.co/4SJsR1P/facebook.png",
       "company": "Facebook LLc",
       "location": "Dhaka, Bangladesh",
       "Salary": "100K - 150K",
@@ -80,9 +80,9 @@
       "experiences": "2-3 Years in this field."
     },
     {
-        "id": "asdfghdf12cdd22",
-        "name": "Motion Graphic Designer",
-        "image": "https://imgbox.io/ib/IZsdj1TTCd",
+        "id": "12cdd2250",
+        "company_name": "Motion Graphic Designer",
+        "logo": "https://i.ibb.co/Pgc720F/airbnb.png",
         "company": "Airbnb LLC",
         "location": "Dhaka, Bangladesh",
         "Salary": "100K - 150K",

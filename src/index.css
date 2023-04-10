@@ -22,7 +22,7 @@
 }
 
 .title-cate-fea{
-  @apply text-5xl font-bold text-slate-800 mt-24 pb-4
+  @apply text-3xl md:text-5xl font-bold text-slate-800 mt-24 pb-4
 }
 .description{
   @apply font-medium text-slate-500

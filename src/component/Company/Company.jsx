@@ -1,10 +1,20 @@
 import React from 'react';
 
-const Company = ({ company }) => {
-    console.log(company);
+const Company = ({ jobs }) => {
+    const { company_name, id, logo, company, location, Salary, job_title } = jobs
+   
     return (
         <div>
-            <p>{company.name}</p>
+            <div className='border p-6'>
+                <img
+                    src={logo}
+                    alt="company logo"
+                    className='w-2/6'
+                />
+                <p>{company_name}</p>
+
+            </div>
+            
         </div>
     );
 };

@@ -13,8 +13,17 @@ const Home = () => {
             .then(data => setCategory(data))
     }, [])
 
-    const featured = useLoaderData();
+    /* jobs slice */
+    let featured = useLoaderData();
+    const [oldFeatured, setFeatured] = useState(featured)
+    const newFeatured = oldFeatured.slice(0, 4);
     // console.log(featured);
+
+    const handlerAllJob = () => {
+        setFeatured(featured)
+        console.log('added featured');
+    }
+
     return (
         <div>
             {/* content and animation added start */}
@@ -59,13 +68,19 @@ const Home = () => {
                 <h2 className='title-cate-fea'>Featured Jobs</h2>
                 <p className='description'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
-            <div className='grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-5 mx-10'>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4 mx-10'>
                 {
-                    featured.map(company => <Company
-                    key={company.id}
-                    company = {company}
-                    ></Company> )
+                    newFeatured.map(jobs => <Company
+                        key={jobs.id}
+                        jobs={jobs}
+                    ></Company>)
                 }
+                <div className=''>
+                    <button
+                        onClick={handlerAllJob}
+                        className='btn-star text-center'
+                    >See all Jobs</button>
+                </div>
             </div>
             {/* Featured Jobs section start */}
         </div>
