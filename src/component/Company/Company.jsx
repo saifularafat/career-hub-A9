@@ -14,7 +14,7 @@ const Company = ({ jobs }) => {
             />
             <h2 className='text-2xl font-bold text-neutral-900'
             >{company_title}</h2>
-            <p className='text-xl font-semibold tracking-wide text-subtile pb-3'>
+            <p className='text-xl font-semibold tracking-wide text-subtitle pb-3'>
                 {company}</p>
             <p className='inline-block'>
                 <span className='time'>{time}</span>
