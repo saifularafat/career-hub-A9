@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1235,
+      "name": "Account & Finance",
+      "img": "https://ibb.co/0BNWbY7",
+      "job": "300 Jobs Available"
+    },
+    {
+      "id": 2234,
+      "name": "Creative Design",
+      "img": "https://ibb.co/vQxYmck",
+      "job": "100+ Jobs Available"
+    },
+    {
+      "id": 2165,
+      "name": "Marketing & Sales",
+      "img": "https://ibb.co/DfShjqY",
+      "job": "150 Jobs Available"
+    },
+    {
+      "id": 5610,
+      "name": "Engineering Job",
+      "img": "https://ibb.co/pbLH4XX",
+      "job": "224 Jobs Available"
+    }
+  ]

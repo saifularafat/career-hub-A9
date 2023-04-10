@@ -104,7 +104,7 @@ const Header = () => {
                                 {/* Mobile nav section */}
                                 <div>
                                     <nav>
-                                        <ul className='space-y-4 bg-white h-fit'>
+                                        <ul className='space-y-4 bg-white h-full'>
                                             <li className='px-3 hover:bg-slate-200'>
                                                 <Link to='/' className='default'>
                                                     Home
