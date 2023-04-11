@@ -14,6 +14,7 @@ export default {
         btnhover: '#5334a9',
         btnmcolor: '#9873FF',
         subtitle: '#757575',
+        viewtitle: '#1A1919',
 
       },
     },

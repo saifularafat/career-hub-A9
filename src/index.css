@@ -48,6 +48,16 @@
   @apply text-xl text-justify
 }
 
+/* View Details style */
+.view-title {
+  @apply text-xl font-bold text-viewtitle pb-4
+}
+.details-style {
+  @apply text-subtitle text-base font-medium leading-8
+}
+.right-site {
+  @apply inline-flex items-center text-xl font-bold text-subtitle pb-4
+}
 /* Error section style */
 .emoji {
   @apply text-center text-zinc-500 text-8xl md:text-[280px]
