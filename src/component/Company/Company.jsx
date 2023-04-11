@@ -6,7 +6,7 @@ const Company = ({ jobs }) => {
     const { company_title, id, logo, company, location, salary, job_title, time } = jobs
 
     return (
-        <div className='border p-6'>
+        <div className='border p-6 shadow-md rounded'>
             <img
                 src={logo}
                 alt="company logo"
@@ -20,7 +20,7 @@ const Company = ({ jobs }) => {
                 <span className='time'>{time}</span>
                 <span className='time ml-2'>Full Time</span>
             </p>
-            <div className='pt-4 flex items-center'>
+            <div className='pt-4 md:flex items-center'>
                 <div className='inline-flex items-center text-xl font-medium text-subtitle'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -37,7 +37,7 @@ const Company = ({ jobs }) => {
                 </p>
             </div>
             <Link 
-            to='application'>
+            to={`featured:${id}`}>
                 <button className='company-btn'>View Details</button>
             </Link>
         </div>

@@ -12,9 +12,9 @@ const Header = () => {
                     <div className='relative flex items-center'>
                         <BriefcaseIcon className="h-8 w-8 text-logo" />
                         <p className='tracking-wide'>
-                            <span className='font-serif text-3xl font-semibold text-rose-700'>D</span>
-                            <span className='title  text-sky-500'>e</span>
-                            <span className='title text-orange-500'>v</span>
+                            <span className='font-serif text-3xl font-semibold text-rose-700'>J</span>
+                            <span className='title  text-sky-500'>o</span>
+                            <span className='title text-orange-500'>b</span>
                             <span className='font-serif text-3xl font-semibold text-purple-800'>Z</span>
                             <span className='title text-blue-700'>o</span>
                             <span className='title text-red-800'>n</span>

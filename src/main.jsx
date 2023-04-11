@@ -13,6 +13,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import ViewDetails from './component/ViewDetails/ViewDetails';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
         loader: () => fetch('featured.json')
+      },
+      {
+        path:'featured/: id',
+        element: <ViewDetails />,
+        loader: ({ params }) => fetch(`/featured.json/${params.id}`)
       },
       {
         path: 'statistics',
