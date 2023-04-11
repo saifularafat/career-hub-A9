@@ -14,14 +14,11 @@ const Home = () => {
     }, [])
 
     /* jobs slice */
-    let featured = useLoaderData();
-    const [oldFeatured, setFeatured] = useState(featured)
-    const newFeatured = oldFeatured.slice(0, 4);
-    // console.log(featured);
+    const job = useLoaderData();
+    const [featured, setFeatured] = useState(false);
 
     const handlerAllJob = () => {
-        setFeatured(featured)
-        console.log('added featured');
+        setFeatured(true)
     }
 
     return (
@@ -70,17 +67,20 @@ const Home = () => {
             </div>
             <div className='grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4 mx-10'>
                 {
-                    newFeatured.map(jobs => <Company
-                        key={jobs.id}
-                        jobs={jobs}
-                    ></Company>)
+                    job.slice(0, featured ? 6 : 4)
+                        .map(jobs => <Company
+                            key={jobs.id}
+                            jobs={jobs}
+                        ></Company>)
                 }
-                <div className=''>
+            </div>
+            <div className='text-center my-10'>
+                {!featured && (
                     <button
                         onClick={handlerAllJob}
                         className='btn-star text-center'
                     >See all Jobs</button>
-                </div>
+                )}
             </div>
             {/* Featured Jobs section start */}
         </div>
