@@ -33,7 +33,6 @@ const AppliedJob = () => {
                     ></ApplicationCart>)
                 }
             </div>
-
         </div>
     );
 };

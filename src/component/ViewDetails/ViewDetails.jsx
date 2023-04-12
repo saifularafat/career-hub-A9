@@ -95,9 +95,11 @@ const ViewDetails = () => {
                         </p>
                     </div>
                     <div
-                        onClick={() => handlerApplicationNow(id)}
                         className='company-btn text-center'>
-                        <button className=''>Apply Now</button>
+                        <button 
+                         onClick={() => handlerApplicationNow(id)}
+                        className=''
+                        >Apply Now</button>
                     </div>
                 </div>
             </div>

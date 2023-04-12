@@ -6,7 +6,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
         <div className=' sticky top-0 z-10'>
-            <div className='my-container flex justify-between items-center bg-white shadow-xl py-5'>
+            <div className='my-container flex justify-between items-center bg-gray-100 shadow-xl py-5'>
                 {/* logo section */}
                 <Link to='/'>
                     <div className='relative flex items-center'>
