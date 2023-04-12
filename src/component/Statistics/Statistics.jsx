@@ -27,8 +27,8 @@ const Statistics = () => {
                 <h2 className='banner-title'>Statistics</h2>
             </div>
             <div className=' my-container bg-sky-200 p-10'>
-                <p className='pb-8 text-2xl font-semibold text-slate-800 md:pl-80 pl-6'>All Assignment Result set:</p>
-                <AreaChart className='mr-10'
+                <p className='pb-8 text-2xl font-semibold text-slate-800 md:pl-80 pl-6'>All Assignment Result set</p>
+                <AreaChart className='md:mr-10'
                     width={800}
                     height={340}
                     data={assignmentMarks}

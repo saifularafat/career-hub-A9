@@ -1,10 +1,11 @@
 import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Company = ({ jobs }) => {
     const { company_title, id, logo, company, location, salary, job_title, time } = jobs
-// const dynamicId = useParams(id)
+    
+   
     return (
         <div className='border p-6 shadow-md rounded'>
             <img
@@ -36,9 +37,11 @@ const Company = ({ jobs }) => {
                     <span className='pl-2'>{salary}</span>
                 </p>
             </div>
-            <Link 
-            to={`/featured/${id}`}>
-                <button className='company-btn'>View Details</button>
+            <Link
+                to={`/featured/${id}`}>
+                <button
+                 className='company-btn'
+                 >View Details</button>
             </Link>
         </div>
     );

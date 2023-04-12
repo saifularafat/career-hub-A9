@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { Job, CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { addToDb } from '../../utilities/fakedb';
 
 const ViewDetails = () => {
 
@@ -15,9 +16,14 @@ const ViewDetails = () => {
             setJobsDetails(selectedJob)
         }
     }, [])
-    console.log(jobsDetails);
+
     const { description, educational, responsibility, experiences, email,
-        Phone, job_title, salary, location, address, } = jobsDetails;
+        Phone, job_title, salary, location, address, id } = jobsDetails;
+
+    /* button handler function */
+    const handlerApplicationNow = (id) => {
+        addToDb(id)
+    }
     return (
         <div>
             <div className='banner'>
@@ -88,7 +94,9 @@ const ViewDetails = () => {
                             </span>
                         </p>
                     </div>
-                    <div className='company-btn text-center'>
+                    <div
+                        onClick={() => handlerApplicationNow(id)}
+                        className='company-btn text-center'>
                         <button className=''>Apply Now</button>
                     </div>
                 </div>
