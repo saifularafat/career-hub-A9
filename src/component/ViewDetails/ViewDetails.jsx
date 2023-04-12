@@ -20,8 +20,8 @@ const ViewDetails = () => {
         Phone, job_title, salary, location, address, } = jobsDetails;
     return (
         <div>
-            <div className='w-full mx-auto py-20 bg-slate-400'>
-                <h1 className='text-center text-2xl text-white'>Job Details</h1>
+            <div className='banner'>
+                <h1 className='banner-title'>Job Details</h1>
             </div>
             <div className='my-container md:flex justify-between mt-12'>
                 <div className='w-8/12 p-4'>

@@ -22,26 +22,31 @@ const Statistics = () => {
     ];
 
     return (
-        <div className=' my-container bg-slate-300 p-10'>
-            <p className='pb-8 text-2xl font-semibold text-slate-800 md:pl-80 pl-6'>All Assignment Result set:</p>
-            <AreaChart className='mr-10'
-                width={800}
-                height={340}
-                data={assignmentMarks}
-                syncId="anyId"
-                margin={{
-                    top: 0,
-                    right: 0,
-                    left: 100,
-                    bottom: 0
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="assignment_name" />
-                <YAxis />
-                <Tooltip />
-                <Area type="monotone" dataKey="mark" stroke="#8884d8" fill="#8884d8" />
-            </AreaChart>
+        <div>
+            <div className='banner mb-10'>
+                <h2 className='banner-title'>Statistics</h2>
+            </div>
+            <div className=' my-container bg-sky-200 p-10'>
+                <p className='pb-8 text-2xl font-semibold text-slate-800 md:pl-80 pl-6'>All Assignment Result set:</p>
+                <AreaChart className='mr-10'
+                    width={800}
+                    height={340}
+                    data={assignmentMarks}
+                    syncId="anyId"
+                    margin={{
+                        top: 0,
+                        right: 0,
+                        left: 100,
+                        bottom: 0
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="assignment_name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Area type="monotone" dataKey="mark" stroke="#8884d8" fill="#8884d8" />
+                </AreaChart>
+            </div>
         </div>
     );
 };

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* main container */
 .my-container{
   @apply w-full mx-auto md:px-11 px-3
 }
@@ -36,10 +37,18 @@
         hover:bg-gradient-to-r hover:from-btnhover hover:to-logo2 transition duration-200
 }
 
+/* banner section style header porer section */
+.banner {
+  @apply w-full mx-auto py-12 md:py-24 bg-slate-300
+}
+.banner-title {
+  @apply text-center text-2xl md:text-5xl font-semibold md:font-bold italic text-slate-700
+}
+
 /* blog section or component style */
 .blog-cart {
   @apply border mb-8 rounded-lg p-5 hover:-top-4
-       relative transition duration-200 md:h-80 shadow-2xl
+       relative transition duration-200 md:h-72 shadow-2xl
 }
 .blog-question {
   @apply text-xl md:text-3xl font-semibold pb-3
