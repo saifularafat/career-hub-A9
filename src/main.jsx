@@ -14,6 +14,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ViewDetails from './component/ViewDetails/ViewDetails';
+import LoadingSpinner from './component/LoadingSpinner/LoadingSpinner';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        loader: () => fetch('featured.json')
+        loader: () => fetch('/featured.json')
       },
       {
         path: 'statistics',
@@ -32,7 +33,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'application',
-        element: <AppliedJob />
+        element: <AppliedJob />,
+        loader: () => fetch('/featured.json')
       },
       {
         path: 'blog',
@@ -42,6 +44,10 @@ const router = createBrowserRouter([
         path:'/featured/:Id',
         element: <ViewDetails />,
         loader: ({ params }) => fetch('/featured.json')
+      },
+      {
+        path: 'loader',
+        element: <LoadingSpinner />
       }
     ]
   },

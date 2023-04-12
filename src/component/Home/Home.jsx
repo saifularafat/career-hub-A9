@@ -2,9 +2,15 @@ import React, { useEffect, useState } from 'react';
 import Lottie from "lottie-react";
 import Application from "../../../public/job.json";
 import Category from '../Category/Category';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigation } from 'react-router-dom';
 import Company from '../Company/Company';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 const Home = () => {
+
+    const navigation = useNavigation();
+    if (navigation.state === 'loading') {
+        return <LoadingSpinner />
+    }
     const [category, setCategory] = useState([]);
 
     useEffect(() => {
