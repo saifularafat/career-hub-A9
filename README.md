@@ -12,5 +12,5 @@ This website is made for job application or job search.  This includes home page
 vs code github or nitrify
 
 ## live page link
-- visited my web site [Netlify](https://delicate-cactus-d2a5ce.netlify.app/featured/12caa89)
+- visited my web site (https://delicate-cactus-d2a5ce.netlify.app/featured/12caa89)
 - [code link] (https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-saifularafat)
